@@ -1,0 +1,35 @@
+.playerContainer {
+    position: relative;
+    max-width: 50rem;
+    z-index: 1;
+}
+
+.control{
+    position: relative;
+    bottom: 3.2rem;
+    opacity: 1;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    z-index: 5;
+}
+
+.range{
+    display: flex;
+    align-self: center;
+    width: 98%;
+    background-color: red;
+}
+
+.playerButtonsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 0.5rem;
+}
+
+.playerButtons{
+    display: flex;
+    gap: 0.3rem;
+}
