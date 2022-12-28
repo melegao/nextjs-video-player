@@ -1,8 +1,4 @@
-/* MOBILE */
-
 @media screen and (max-width: 767px) {
-
-
   .playerContainer {
     position: relative;
     width: 98vw;
@@ -57,7 +53,6 @@
     cursor: pointer;
     font-size: 1.3rem;
     color: #e5ebf0;
-    /* box-shadow:  0px 0px 0px 4px #E5EBF0; */
   }
 
   .slider {
@@ -74,11 +69,8 @@
   }
 }
 
-/* TABLET */
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  
-    .playerContainer {
+  .playerContainer {
     position: relative;
     max-width: 50rem;
     z-index: 1;
@@ -142,24 +134,17 @@
   }
 }
 
-/* DESKTOP */
-
 @media screen and (min-width: 1024px) {
-
-    .container{
-        height: 28.2rem;
-        /* background-color: blue; */
-    }
-
+  .container {
+    height: 28.2rem;
+  }
 
   .playerContainer {
     position: relative;
     width: 43rem;
     z-index: 1;
     cursor: pointer;
-    
   }
-
 
   .control {
     position: relative;
@@ -218,5 +203,4 @@
     font-size: 0.9rem;
     color: #e5ebf0;
   }
-
 }

@@ -3,18 +3,39 @@
     background-color: #363636;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 1rem;
     padding: 0.5rem 0.2rem 1rem 0.2rem;
     width: 100vw;
   }
 
   .title {
     margin-top: -2.4rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #EEEEEE;
+    color: #eeeeee;
+  }
+
+  .videoResume {
+    margin-top: 1rem;
+    background-color: #111111;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .videoResumeViews {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .videoResumeDescription {
+    font-size: 13px;
   }
 
   .relatedVideos {
@@ -41,11 +62,32 @@
 
   .title {
     margin-top: -4rem;
-    color: #EEEEEE;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 16px;
+    color: #eeeeee;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 19px;
     font-weight: bold;
+  }
+
+  .videoResume {
+    margin-top: 1rem;
+    background-color: #111111;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .videoResumeViews {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .videoResumeDescription {
+    font-size: 15px;
   }
 
   .relatedVideos {
@@ -73,11 +115,33 @@
 
   .title {
     margin-top: -3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 16px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 25px;
     font-weight: bold;
-    color: #EEEEEE;
+    color: #eeeeee;
+  }
+
+  .videoResume {
+    width: 43rem;
+    margin-top: 1rem;
+    background-color: #111111;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .videoResumeViews {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .videoResumeDescription {
+    font-size: 15px;
   }
 
   .relatedVideos {

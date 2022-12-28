@@ -9,6 +9,7 @@ export const db = [
     author: "Blender Fundation",
     category: "Cartoons",
     views: 125,
+    duration: "9:56",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const db = [
     author: "Blender Fundation",
     category: "Cartoons",
     views: 74,
+    duration: "10:53",
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ export const db = [
     author: "Google",
     category: "Ads",
     views: 698,
+    duration: "0:15",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ export const db = [
     author: "Blender Fundation",
     category: "Games",
     views: 701,
+    duration: "14:47",
   },
   {
     id: 5,
@@ -52,5 +56,6 @@ export const db = [
     author: "NASA",
     category: "Space",
     views: 15,
+    duration: "0:21",
   },
 ];

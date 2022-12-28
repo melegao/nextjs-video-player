@@ -1,20 +1,36 @@
 import styles from "../../styles/VideoPage.module.css";
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Header from "../../components/Header";
 import CardAside from "../../components/CardAside";
 import { db } from "../../db/db";
 import CardCategory from "../../components/CardCategory";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const VideoPlayer = dynamic(() => import("../../components/VideoPlayer"), {
   ssr: false,
 });
 
-export default function Video() {
+export async function getServerSideProps(context) {
+  const id = context.query.id;
+
+  const movie = db.filter((elem) => elem.id == id);
+
+  return {
+    props: {
+      id: id,
+      movie: movie,
+    },
+  };
+}
+
+export default function Video(props) {
   const videoId = useRouter();
 
   const [catFiltered, setCatFilteres] = useState("Tudo");
+
+  console.log(props.movie);
 
   let categories = ["Tudo"];
 
@@ -30,12 +46,24 @@ export default function Video() {
 
   return (
     <>
+      <Head>
+        <title>Direção Concursos - {props.movie[0].title}</title>
+      </Head>
       <Header />
       <div className={styles.container}>
         <div>
-          <VideoPlayer />
-          <p className={styles.title}>TITULO</p>
+          <VideoPlayer movie={props.movie}/>
+          <h3 className={styles.title}>{props.movie[0].title}</h3>
+          <div className={styles.videoResume}>
+            <p className={styles.videoResumeViews}>
+              {props.movie[0].views} mil visualizações
+            </p>
+            <p className={styles.videoResumeDescription}>
+              {props.movie[0].description}
+            </p>
+          </div>
         </div>
+
         <div className={styles.relatedVideos}>
           <div className={styles.categoryCard}>
             {categories.map((elem, index) => (

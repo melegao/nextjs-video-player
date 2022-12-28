@@ -9,7 +9,6 @@ import {
   BsFillSkipForwardFill,
   BsFillSkipBackwardFill,
   BsGearFill,
-  BsFullscreen,
 } from "react-icons/bs";
 import { BiFullscreen } from "react-icons/bi";
 import screenfull from "screenfull";
@@ -17,17 +16,10 @@ import { Slider } from "@mui/material";
 import { db } from "../../db/db";
 import { useRouter } from "next/router";
 
-
-export default function VideoPlayer({setVideoInfo}) {
-  // const videoURL = "https://www.youtube.com/watch?v=BRzi0rDhhCc";
-  // const videoURL = "http://media.w3.org/2010/05/bunny/movie.mp4";
-
+export default function VideoPlayer({ movie }) {
   const videoId = useRouter();
-  // console.log(videoId.query.id);
 
-  const videoSelected = db.find((elem) => elem.id == videoId.query.id)
-  
-    
+  const videoSelected = db.find((elem) => elem.id == videoId.query.id);
 
   const playerRef = useRef(null);
   const playerContainerRef = useRef(null);
@@ -55,7 +47,6 @@ export default function VideoPlayer({setVideoInfo}) {
     setPlayerState({
       ...playerState,
       muted: !playerState.muted,
-      volume: playerState.muted && 0,
     });
   };
 
@@ -179,7 +170,7 @@ export default function VideoPlayer({setVideoInfo}) {
                 onChange={handleVolumeUpdate}
               />
             </div>
-            <p className={styles.time}>{msToTime(playedSeconds)}</p>
+            <p className={styles.time}>{msToTime(playedSeconds)} / {movie[0].duration}</p>
           </div>
           <div className={styles.playerButtons}>
             <BsFillSkipBackwardFill
