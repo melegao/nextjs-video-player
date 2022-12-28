@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
   .card {
     background-color: #111111;
+    color: #eeeeee;
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     cursor: pointer;
@@ -13,6 +14,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card {
     background-color: #111111;
+    color: #eeeeee;
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     cursor: pointer;
@@ -25,6 +27,7 @@
 @media screen and (min-width: 1024px) {
   .card {
     background-color: #111111;
+    color: #eeeeee;
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     cursor: pointer;

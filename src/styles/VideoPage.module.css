@@ -20,6 +20,7 @@
   .videoResume {
     margin-top: 1rem;
     background-color: #111111;
+    color: #eeeeee;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -72,6 +73,7 @@
   .videoResume {
     margin-top: 1rem;
     background-color: #111111;
+    color: #eeeeee;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -126,6 +128,7 @@
     width: 43rem;
     margin-top: 1rem;
     background-color: #111111;
+    color: #eeeeee;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
