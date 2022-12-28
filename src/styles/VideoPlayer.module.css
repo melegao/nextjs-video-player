@@ -1,35 +1,222 @@
-.playerContainer {
-    position: relative;
-    max-width: 50rem;
-    z-index: 1;
-}
+/* MOBILE */
 
-.control{
+@media screen and (max-width: 767px) {
+
+
+  .playerContainer {
     position: relative;
-    bottom: 3.2rem;
-    opacity: 1;
-    max-width: 50rem;
+    width: 98vw;
+    z-index: 1;
+  }
+
+  .control {
+    width: 98vw;
+    position: relative;
+    padding: 0.2rem;
+    bottom: 3.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    justify-content: space-between;
+    height: 3rem;
     z-index: 5;
-}
+    gap: 0px;
+    -webkit-box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+    box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+  }
 
-.range{
+  .range {
     display: flex;
     align-self: center;
     width: 98%;
     background-color: red;
-}
+  }
 
-.playerButtonsContainer{
+  .playerButtonsContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0.2rem;
+    height: 1.3rem;
+  }
+
+  .playerButtons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #e5ebf0;
+  }
+
+  .playPauseBtn {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #e5ebf0;
+    /* box-shadow:  0px 0px 0px 4px #E5EBF0; */
+  }
+
+  .slider {
+    width: 4rem;
+    padding: 0.2rem 0.1rem 0rem 0rem;
+    font-size: 1rem;
+  }
+
+  .time {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 0.5rem;
+    color: #e5ebf0;
+  }
 }
 
-.playerButtons{
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+    .playerContainer {
+    position: relative;
+    max-width: 50rem;
+    z-index: 1;
+  }
+
+  .control {
+    position: relative;
+    left: 0rem;
+    bottom: 4.6rem;
+    padding: 0.2rem;
+    max-width: 50rem;
     display: flex;
-    gap: 0.3rem;
+    flex-direction: column;
+    z-index: 5;
+    -webkit-box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+    box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+  }
+
+  .range {
+    display: flex;
+    align-self: center;
+    width: 98%;
+    background-color: red;
+  }
+
+  .playerButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 0.2rem;
+    height: 2rem;
+  }
+
+  .playerButtons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .playPauseBtn {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .button {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+
+  .slider {
+    width: 6rem;
+    padding-right: 1rem;
+  }
+
+  .time {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    color: #e5ebf0;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        height: 28.2rem;
+        /* background-color: blue; */
+    }
+
+
+  .playerContainer {
+    position: relative;
+    width: 43rem;
+    z-index: 1;
+    cursor: pointer;
+    
+  }
+
+
+  .control {
+    position: relative;
+    left: 0rem;
+    padding: 0.2rem;
+    bottom: 4.6rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    -webkit-box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+    box-shadow: inset 0px -26px 19px -7px rgba(0, 0, 0, 0.76);
+  }
+
+  .range {
+    display: flex;
+    align-self: center;
+    width: 98%;
+    background-color: red;
+  }
+
+  .playerButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 0.2rem;
+    height: 2rem;
+  }
+
+  .playerButtons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .playPauseBtn {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .button {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+
+  .slider {
+    width: 6rem;
+    padding: 0.2rem 0.1rem 0rem 0rem;
+    font-size: 1rem;
+  }
+
+  .time {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: #e5ebf0;
+  }
+
 }

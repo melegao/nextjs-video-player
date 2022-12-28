@@ -1,12 +1,19 @@
 import Link from "next/link"
+import Header from "../components/Header"
+import { db } from "../db/db"
+
 
 export default function Home () {
 
   return (
     <>
-      <Link href='/video'>
-        <h1>Player</h1>
-      </Link>    
+      <Header />
+      {db.map((elem) => (
+        <Link href={`/video/${elem.id}`} key={elem.id} video={elem}>
+          <p>{elem.title}</p>
+        </Link>
+        ))}
+      
     </>
   )
 

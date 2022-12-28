@@ -74,7 +74,7 @@ function usePlayerState($videoPlayer) {
     
     function handleVolumeUpdate() {
         const currentPercentage = $videoPlayer.current.volume * 100
-        console.log(currentPercentage)
+        
         setPlayerState({
             ...playerState,
             percentage: currentPercentage,
@@ -132,7 +132,7 @@ export default function Player() {
     function msToTime(duration) {
 
         
-        var milliseconds = Math.floor((duration % 10) / 100),
+        let milliseconds = Math.floor((duration % 10) / 100),
           seconds = Math.floor((duration ) % 60),
           minutes = Math.floor((duration / 60) % 60),
           hours = Math.floor((duration / (60 * 60)) % 24);
