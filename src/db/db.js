@@ -48,7 +48,7 @@ export const db = [
   },
   {
     id: 5,
-    title: "Cosmos",
+    title: "Cosmos (no audio)",
     url: "http://mirrors.standaloneinstaller.com/video-sample/star_trails.mp4",
     thumb: "/images/thumbs/cosmos.png",
     description:
