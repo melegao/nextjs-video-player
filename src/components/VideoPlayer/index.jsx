@@ -124,6 +124,7 @@ export default function VideoPlayer({ movie }) {
           height="100%"
         />
       </div>
+
       <div className={styles.control}>
         <div className={styles.playerButtonsContainer}>
           <Slider
@@ -170,7 +171,9 @@ export default function VideoPlayer({ movie }) {
                 onChange={handleVolumeUpdate}
               />
             </div>
-            <p className={styles.time}>{msToTime(playedSeconds)} / {movie[0].duration}</p>
+            <p className={styles.time}>
+              {msToTime(playedSeconds)} / {movie[0].duration}
+            </p>
           </div>
           <div className={styles.playerButtons}>
             <BsFillSkipBackwardFill
