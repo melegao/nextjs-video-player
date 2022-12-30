@@ -114,11 +114,13 @@
   .playPauseBtn {
     cursor: pointer;
     font-size: 2rem;
+    color: #e5ebf0;
   }
 
   .button {
     cursor: pointer;
     font-size: 1.3rem;
+    color: #e5ebf0;
   }
 
   .slider {
@@ -184,11 +186,13 @@
   .playPauseBtn {
     cursor: pointer;
     font-size: 2rem;
+    color: #e5ebf0;
   }
 
   .button {
     cursor: pointer;
     font-size: 1.3rem;
+    color: #e5ebf0;
   }
 
   .slider {
