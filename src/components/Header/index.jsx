@@ -7,7 +7,7 @@ export default function Header() {
       <div className={styles.container}>
         <img
           src="/images/logo.svg"
-          alt="Direção Concursos"
+          alt="My Tube"
           className={styles.logo}
         />
       </div>

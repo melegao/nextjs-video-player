@@ -46,16 +46,4 @@ export const db = [
     views: 701,
     duration: "14:47",
   },
-  {
-    id: 5,
-    title: "Cosmos (no audio)",
-    url: "http://mirrors.standaloneinstaller.com/video-sample/star_trails.mp4",
-    thumb: "/images/thumbs/cosmos.png",
-    description:
-      "Incrível vídeo feito pela NASA em sua primeira expedição a Lua.",
-    author: "NASA",
-    category: "Space",
-    views: 15,
-    duration: "0:21",
-  },
 ];

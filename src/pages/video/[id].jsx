@@ -30,8 +30,6 @@ export default function Video(props) {
 
   const [catFiltered, setCatFilteres] = useState("Tudo");
 
-  console.log(props.movie);
-
   let categories = ["Tudo"];
 
   for (let i = 0; i < db.length; i++) {
@@ -47,7 +45,7 @@ export default function Video(props) {
   return (
     <>
       <Head>
-        <title>Direção Concursos - {props.movie[0].title}</title>
+        <title>My Tube - {props.movie[0].title}</title>
       </Head>
       <Header />
       <div className={styles.container}>

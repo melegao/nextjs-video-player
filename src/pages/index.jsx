@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Direção Concursos - Teste técnico</title>
+        <title>My Tube - Video Player in Next.js</title>
       </Head>
 
       <div className={styles.container}>
